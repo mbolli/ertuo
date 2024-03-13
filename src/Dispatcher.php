@@ -16,6 +16,7 @@ use function array_shift;
 class Dispatcher implements DispatcherInterface
 {
 	protected $routes;
+    protected $rules;
 
 	function __construct(RouteAbstract $routes, RuleAggregate $rules = null)
 	{
